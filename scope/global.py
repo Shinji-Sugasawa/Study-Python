@@ -1,7 +1,7 @@
 initial = 20
 
 def add(a,b):
-    global initial
+    global initial #グローバルスコープを書き換え
     initial = a + b
     return initial
 
