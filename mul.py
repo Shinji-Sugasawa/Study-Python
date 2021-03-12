@@ -1,5 +1,5 @@
-def mul(price,number): #あらかじめ宣言
-    result = price * number
+def mul(a,b): #あらかじめ宣言
+    result = a * b
     return result
 
 price = 200
