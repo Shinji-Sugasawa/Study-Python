@@ -5,6 +5,6 @@ def add(a,b):
     initial = a + b
     return initial
 
-print (initial) # --> 23 
+print (initial) # --> 20
 print (add(1,2)) # --> 3
 print (initial) # --> 3 
