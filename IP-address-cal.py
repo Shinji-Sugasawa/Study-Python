@@ -1,6 +1,8 @@
 address = 2
-for i in range(1,32):
-    address *= 2
-    #print("i =="+str(i))
+print("アドレスのビット数は何ビット?")
+bit = input()
 
-print(address)
+for i in range(0,int(bit)-1):
+    address *= 2
+
+print("アドレス数 : "+str(address))
