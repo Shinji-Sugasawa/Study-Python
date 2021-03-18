@@ -7,6 +7,7 @@ print(split_text)
 
 counter = 0
 for word in split_text:#forループで分割した文字列を処理
-    counter += 1 #文字をカウント
+    if len(word) >= 3:
+        counter += 1 #文字をカウント
 
 print(f"単語の数:{counter}")#画面に出力する
