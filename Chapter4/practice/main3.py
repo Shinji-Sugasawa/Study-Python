@@ -1,5 +1,14 @@
 data = "なまむぎなまごめなまたまご"
 
+counter = {}
+
 for character in data:
     
-    print(character)
+    if character not in counter:
+        counter[character] = 0
+        #print(counter)
+    counter[character] += 1
+
+for character , number in counter.items():
+    
+    print(f"{character} : {number}")
