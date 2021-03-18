@@ -1,4 +1,7 @@
 data = [[10,20],[30]]
 
-for number in data:
-    print(number)
+for inner in data:#外のリストから要素を取り出す
+    
+    for number in inner:#innerの要素を取り出す
+        
+        print(number)
