@@ -11,8 +11,10 @@ class DisplayCounter(Counter):  #Counterクラスを継承
     def display(self):
         print(f"value = {self.value} ")
         
+"""
 from disp_counter import DisplayCounter
 
 c1 = DisplayCounter()   #親クラスのCounterの__init__()メソッドが呼ばれる
 c1.count_up()   #親クラスのCounterのcount_up()メソッド
 c1.display() #DisplayCOunterクラスのdisplay()メソッド
+"""
