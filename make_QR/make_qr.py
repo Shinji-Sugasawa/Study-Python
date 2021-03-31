@@ -6,3 +6,7 @@ class MakeQR:   #クラス定義
         self.url = "http://www.nao.net.it-chiba.ac.jp"  #URLを直接定義する
         self.output = "python.svg"  #アウトプットファイル名を直接定義する
     
+    def make(self): #makeメソッドの定義
+        factory = qrcode.image.svg.SvgImage
+        img = qrcode.make(self.url, image_factory = factory)
+        img.save(self.output)
