@@ -19,5 +19,7 @@ class MakeQR:   #クラス定義
 if __name__ == "__main__":  #モジュールが呼ばれたときにTrueとなる決まりの書き方
     import sys  #sysライブラリをインポート
     args = sys.argv #コマンドライン引数を取得する
+    output = args[1]    #コマンドライン引数から1つ目の引数をoutput変数に入れる
+    
     app = MakeQR()  #MakeQRクラスをインスタンス化
     app.make()  #makeメソッドを呼び出し、QRコード画像が生成されて保存する
