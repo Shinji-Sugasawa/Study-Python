@@ -13,4 +13,4 @@ class MakeQR:   #クラス定義
 
 if __name__ == "__main__":  #モジュールが呼ばれたときにTrueとなる決まりの書き方
     app = MakeQR()  #MakeQRクラスをインスタンス化
-    app.make()  #makeメソッドを呼び出し、QRコード画像が生成され保存する
+    app.make()  #makeメソッドを呼び出し、QRコード画像が生成されて保存する
