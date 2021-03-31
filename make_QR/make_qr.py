@@ -13,6 +13,9 @@ class MakeQR:   #クラス定義
 
     def run(self):
         url = input("ここにURLを入力してください:") #コンソールから入力値を受け入れられるように定義
+        if not url.startswith("http"):  #コンソールから入力された文字列が、httpから始まっているか確認する。
+            print("入力文字が、'http'から始まっていません") #httpから始まらない場合はメッセージを出力
+            return  #runメソッドの実行をここで終えるためにreturn文を使う
         self.url = url  #入力されたURLをインスタンス属性にする
         self.make() #makeメソッドを実行してQRコード生成と保存
 
