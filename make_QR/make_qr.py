@@ -2,7 +2,7 @@ import qrcode   #QRコード生成用のパッケージをインポートする
 import qrcode.image.svg #QRコードをSVG画像で保存するモジュールをインポートする
 
 class MakeQR:   #クラス定義
-    def __init__(self, output): #コンストラクタを定義
+    def __init__(self, output): #コンストラクタの引数にoutputを設定
         self.url = ""  #URLの初期値を空にする
         self.output = output  #アウトプットファイル名を直接定義する
     
@@ -11,6 +11,11 @@ class MakeQR:   #クラス定義
         img = qrcode.make(self.url, image_factory = factory)
         img.save(self.output)
 
+    def run(self):
+        url = input("ここにURLを入力してください:") #コンソールから入力値を受け入れられるように定義
+        self.url = url  #入力されたURLをインスタンス属性にする
+        self.make() #makeメソッドを実行してQRコード生成と保存
+        
 if __name__ == "__main__":  #モジュールが呼ばれたときにTrueとなる決まりの書き方
     app = MakeQR()  #MakeQRクラスをインスタンス化
     app.make()  #makeメソッドを呼び出し、QRコード画像が生成されて保存する
