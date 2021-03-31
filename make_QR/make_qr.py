@@ -3,4 +3,6 @@ import qrcode.image.svg #QRコードをSVG画像で保存するモジュール�
 
 class MakeQR:   #クラス定義
     def __init__(self): #コンストラクタを定義
-        self.url = "http://www.nao.net.it-chiba.ac.jp"
+        self.url = "http://www.nao.net.it-chiba.ac.jp"  #URLを直接定義する
+        self.output = "python.svg"  #アウトプットファイル名を直接定義する
+    
