@@ -15,7 +15,9 @@ class MakeQR:   #クラス定義
         url = input("ここにURLを入力してください:") #コンソールから入力値を受け入れられるように定義
         self.url = url  #入力されたURLをインスタンス属性にする
         self.make() #makeメソッドを実行してQRコード生成と保存
-        
+
 if __name__ == "__main__":  #モジュールが呼ばれたときにTrueとなる決まりの書き方
+    import sys  #sysライブラリをインポート
+    args = sys.argv #コマンドライン引数を取得する
     app = MakeQR()  #MakeQRクラスをインスタンス化
     app.make()  #makeメソッドを呼び出し、QRコード画像が生成されて保存する
