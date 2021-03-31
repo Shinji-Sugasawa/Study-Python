@@ -21,5 +21,5 @@ if __name__ == "__main__":  #モジュールが呼ばれたときにTrueとな�
     args = sys.argv #コマンドライン引数を取得する
     output = args[1]    #コマンドライン引数から1つ目の引数をoutput変数に入れる
     
-    app = MakeQR()  #MakeQRクラスをインスタンス化
-    app.make()  #makeメソッドを呼び出し、QRコード画像が生成されて保存する
+    app = MakeQR(output)  #MakeQRクラスをインスタンス化する際に、outputを指定する
+    app.run()  #runメソッドを実行
