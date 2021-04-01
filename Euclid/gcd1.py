@@ -9,3 +9,7 @@ def gcd(x,y):
         count +=1
     
     count = 1
+    while y > count:
+        if count % y == 0:
+            y_list.append(count)
+        count +=1
