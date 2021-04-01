@@ -4,13 +4,14 @@ def gcd(x,y):
     
     count = 1
     while x > count:
-        if count % x == 0:
+        if x % count == 0:
             x_list.append(count)
+            print(x_list)
         count +=1
     
     count = 1
     while y > count:
-        if count % y == 0:
+        if y % count == 0:
             y_list.append(count)
         count +=1
         
