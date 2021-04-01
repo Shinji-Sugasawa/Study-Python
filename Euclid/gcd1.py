@@ -16,9 +16,9 @@ def gcd(x,y):
         
     count_x,count_y = 0,0
     gcd_list = []
-    for count_x in list_x:
+    for count_x in x_list:
         for count_y in y_list:
-            if cont_x == count_y:
+            if count_x == count_y:
                 gcd_list.append(count_x)
     
     return max(gcd_list)
