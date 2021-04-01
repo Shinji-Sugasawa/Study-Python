@@ -6,7 +6,7 @@ def gcd(x,y):
     while x > count:
         if x % count == 0:
             x_list.append(count)
-            print(x_list)
+            #print(x_list)
         count +=1
     
     count = 1
